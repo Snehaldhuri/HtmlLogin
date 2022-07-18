@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.logo{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+.login-form {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.forgot-inline{
+    display:inline-block;
+}
+.inp{
+    margin: 10px 0px;
+}
+.inp .input-box{
+    width: 100%;
+    height: 1.5rem;
+    margin: 0.5rem 0;
+    padding: 25px 0px 25px 15px;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.space{
+    display: flex ;
+    justify-content: space-between;
+    margin: 1.5rem 0px;
+}
+ .btn button {
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.btn-log button{
+    background-color: #4dbfb6;
+    color: white;
+    border: none;
+    margin-top: 5px;
+}
+
+.btn-sign button {
+    background-color: #31de3c;
+    color:black
+    border: none;
+} 
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: white;
+    -webkit-text-fill-color: transparent;
+}
+
+.create-acc {
+    position:center;
+    bottom: 2rem;
+}
+
+@media (max-width:670px) {
+    .main {
+        display: block;
+    }
+
+    .logo {
+        width: 100%;
+        height: 60%;
+    }
+
+    .login-form {
+        width: 100%;
+        height: 60%;
+        font-size: 20px;
+    }
+
+}
+
+#invalid {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
